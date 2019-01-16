@@ -1,0 +1,36 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "options": {"cwd": "${workspaceFolder}/bin"},
+            "command": "g++",
+            "args": [
+                "-g",
+                "../main.cpp",
+                "-odecode_ways"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "build rel",
+            "type": "shell",
+            "options": {"cwd": "${workspaceFolder}/bin"},
+            "command": "g++",
+            "args": [
+                "../main.cpp",
+                "-odecode_ways_rel"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+    ]
+}
