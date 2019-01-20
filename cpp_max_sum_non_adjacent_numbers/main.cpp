@@ -38,11 +38,11 @@ int main(int argc, char const *argv[])
     std::vector<int> fourthTest{ 5, 1, -1, -5 };
     std::vector<int> fifthTest{ 5, -1, 1, -5 };
     std::vector<int> sixthTest{ 5, -1, -1, -5, 2 };
-    CallMaxSumNonAdjacent(firstTest);
-    CallMaxSumNonAdjacent(secondTest);
-    CallMaxSumNonAdjacent(thirdTest);
-    CallMaxSumNonAdjacent(fourthTest);
-    CallMaxSumNonAdjacent(fifthTest);
-    CallMaxSumNonAdjacent(sixthTest);
+    CallMaxSumNonAdjacent(firstTest);  // Expected 13
+    CallMaxSumNonAdjacent(secondTest); // Expected 10
+    CallMaxSumNonAdjacent(thirdTest);  // Expected 5
+    CallMaxSumNonAdjacent(fourthTest); // Expected 5
+    CallMaxSumNonAdjacent(fifthTest);  // Expected 6
+    CallMaxSumNonAdjacent(sixthTest);  // Expected 7
     return 0;
 }
